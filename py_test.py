@@ -1,5 +1,7 @@
 import pytest
-
+"""
+если тест должен упасть, а он выполнился успешно, то высветится ошибка
+"""
 @pytest.mark.xfail(strict=True)
 def test_succeed():
     assert True
